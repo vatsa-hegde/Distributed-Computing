@@ -3,12 +3,12 @@ This repository contains five programming assignments completed as part of the D
 
 ## 📂 Projects Overview
 
-### HW1 – Introduction to Distributed Systems
+### Project 1 – Introduction to Distributed Systems
 Set up environment and explored basic distributed system concepts.
 Small-scale experiments with message passing and coordination.
 Built a TicTacToe with single and multiplayer optons connected through a distributed network.
 
-### HW2 – Real-Time Flight Data Analysis with Apache Storm
+### Project 2 – Real-Time Flight Data Analysis with Apache Storm
 Implemented a Storm topology to process live-like flight data.
 
 Components:
@@ -16,14 +16,14 @@ Components:
 - AirlineSorter bolt: sorted/grouped flights by airlines.
 - Focused on stream processing and parallel bolt execution.
 
-### HW3 – Agent-Based Simulation (Turtle Movement)
+### Project 3 – Agent-Based Simulation (Turtle Movement)
 Simulated a turtle moving in a 10×10 grid using probabilistic modeling.
 Additional feature: 
 1. indirect inter-agent communication via Place
 2. implemented with ConcurrentHashMap message queues.
 3. Showed how agents can coordinate without direct messaging.
 
-### HW4 – Distributed Indexing with Hazelcast
+### Project 4 – Distributed Indexing with Hazelcast
 Built an inverted index across distributed nodes using Hazelcast.
 
 Additional features:
@@ -31,7 +31,7 @@ Additional features:
 2. Hierarchical Dispatch – parent agent (HierarchicalIndexingAgent) delegated tasks to child agents (ChildIndexingAgent).
 3. Web Interface – Java Servlet (Tomcat) for keyword search via browser.
 
-### HW5 – Distributed Graph Processing
+### Project 5 – Distributed Graph Processing
 Designed a graph processing framework in a distributed environment.
 Additional features:
 1. Support for variable number of tasks.
