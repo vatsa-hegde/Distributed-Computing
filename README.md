@@ -1,52 +1,51 @@
 # Distributed-Computing
-This repository contains five programming assignments completed as part of the Distributed Computing course. Each project explores concepts in distributed systems, parallel processing, and scalability, with additional features implemented beyond the core requirements. Every folder has it's own report tagged to it. Please refer to the report if any information is required.
 
-## 📂 Projects Overview
+This repository contains five CS projects demonstrating distributed systems, big data, mobile agents, and graph analysis. Each project is self-contained in its folder.
 
-### Project 1 – Introduction to Distributed Systems
-Set up environment and explored basic distributed system concepts.
-Small-scale experiments with message passing and coordination.
-Built a TicTacToe with single and multiplayer optons connected through a distributed network.
+---
 
-### Project 2 – Real-Time Flight Data Analysis with Apache Storm
-Implemented a Storm topology to process live-like flight data.
+## Projects
 
-Components:
-- HubIdentifier bolt: grouped flights by geographic square-region (1° latitude/longitude).
-- AirlineSorter bolt: sorted/grouped flights by airlines.
-- Focused on stream processing and parallel bolt execution.
+### 1. Distributed Tic-Tac-Toe
+- **Description:** Networked Tic-Tac-Toe allowing two players to play on different machines with synchronized game state.
+- **Tech:** Java, RMI, Sockets, Multithreading
+- **Run:** Start server and clients via Java commands in the project folder.
 
-### Project 3 – Agent-Based Simulation (Turtle Movement)
-Simulated a turtle moving in a 10×10 grid using probabilistic modeling.
-Additional feature: 
-1. indirect inter-agent communication via Place
-2. implemented with ConcurrentHashMap message queues.
-3. Showed how agents can coordinate without direct messaging.
+### 2. Flight Data Filtering with Apache Storm
+- **Description:** Real-time flight data filtering based on altitude, vertical rate, and proximity to airports.
+- **Tech:** Java, Apache Storm, RMI
+- **Run:** Deploy topology using Storm and feed flight data from `flights.txt`.
 
-### Project 4 – Distributed Indexing with Hazelcast
-Built an inverted index across distributed nodes using Hazelcast.
+### 3. Mobile Agent Platform
+- **Description:** Java RMI-based mobile agents that migrate between hosts, communicate via shared Places, and spawn child agents.
+- **Tech:** Java, RMI, Multithreading
+- **Run:** Start Place servers, then deploy agents to move across hosts.
 
-Additional features:
-1. Mobile Agents – deployed and executed on specific nodes.
-2. Hierarchical Dispatch – parent agent (HierarchicalIndexingAgent) delegated tasks to child agents (ChildIndexingAgent).
-3. Web Interface – Java Servlet (Tomcat) for keyword search via browser.
+### 4. Hazelcast-based Distributed Document Indexing
+- **Description:** Distributed indexing system with web interface for keyword search and retrieval.
+- **Tech:** Java, Hazelcast, Tomcat, Servlets
+- **Run:** Start Hazelcast nodes, deploy servlet on Tomcat, and use the web form to search.
 
-### Project 5 – Distributed Graph Processing
-Designed a graph processing framework in a distributed environment.
-Additional features:
-1. Support for variable number of tasks.
-2. Configurable graph sizes.
-3. Graphical output of results.
+### 5. Variable Graph Analysis and Task Execution
+- **Description:** Task execution simulation on variable-sized graphs with visual output showing dependencies.
+- **Tech:** Java, Multithreading, Swing
+- **Run:** Compile and run the main Java class to see graph execution visualization.
 
-## 🚀 Technologies Used
-- Java (core implementation),
-- Apache Storm (stream processing),
-- Hazelcast (distributed in-memory data grid),
-- Tomcat + Java Servlets (web interface),
-- Concurrent Programming (threads, message queues, agents)
+---
 
+## Common Skills Demonstrated
+- Java, Multithreading
+- Distributed Systems (RMI, Hazelcast)
+- Real-time data processing (Apache Storm)
+- Mobile Agents and Concurrency
+- Web interface with Java Servlets
+- Graph-based task analysis and visualization
 
-## ✨ Highlights
-* Explored real-time data processing, distributed indexing, and agent-based systems.
-* Built fault-tolerant, scalable, and modular distributed applications.
-* Added advanced features (mobile agents, hierarchical dispatch, web interface, visualization).
+---
+
+## How to Run
+Each project folder contains instructions to compile and run.  
+Typical steps:
+```bash
+javac *.java
+java <MainClass>
